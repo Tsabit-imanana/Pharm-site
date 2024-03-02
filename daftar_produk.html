@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Pharm Site</title>
+    <link rel="stylesheet" href="assets/style-crud.css">
+</head>
+<body>
+    <header>
+        <h1>CRUD</h1>
+    </header>
+    <div class="container">
+        <button onclick="goBack()" class="back-button">Kembali</button> <!-- Tombol "Back" -->
+        <h2>Daftar Produk</h2>
+        <ul class="product-list">
+            <li class="table-header">
+                <div>Nama Produk</div>
+                <div>Harga</div>
+                <div>Aksi</div>
+            </li>
+            <li>
+                <div class="product-info">
+                    <span class="name">Sakatonik</span>
+                    <span class="price">Rp 50.000</span> <!-- Memperbarui posisi harga -->
+                </div>
+                <div class="edit-delete-buttons">
+                    <a href="delete_produk.html" class="delete-button">Hapus</a> <!-- Tambahkan link ke fungsi delete_produk -->
+                    <a href="update_produk.html" class="edit-button">Edit</a> <!-- Tambahkan link ke fungsi update_produk -->
+                </div>
+            </li>
+            <!-- Daftar produk lainnya -->
+        </ul>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Fungsi JavaScript untuk kembali ke halaman sebelumnya
+        }
+    </script>
+</body>
+</html>

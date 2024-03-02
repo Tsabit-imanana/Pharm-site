@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.content {
+    display: flex;
+    justify-content: center; /* Tambahkan padding 10% untuk margin kiri dan kanan */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #e9e8e8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.calatogbox {
+    background-color: #333;
+}
+
+
+.producttitle {
+    text-align: center;
+    font-size: 20;
+    font-weight: bold;
+}
+.productdesc {
+    text-align: center;
+    font-size: 18px;
+}
+.image {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container {
+  height: 200px; /* Atur tinggi gambar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: cover;
+}
+
+/* Gaya CSS untuk halaman detail produk */
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-image {
+    margin-right: 20px;
+}
+
+.product-image img {
+    max-width: 300px;
+    height: auto;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #333;
+}
+
+.product-description {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.add-to-cart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
