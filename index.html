@@ -3,71 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharm site</title>
+    <title>Login - Pharm Site</title>
     <link rel="stylesheet" href="assets/style.css">
     <style>
         /* Gaya CSS untuk tata letak halaman */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         
+        .login-form {
+            max-width: 400px;
+            padding: 30px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+        }
+        
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .login-form button:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Pharm Site</h1>
-    </header>
-    <div>
-        <nav>
-            <a href="#">Beranda</a> |
-            <a href="#">Produk</a> |
-            <a href="#">profil</a> |
-            <a href="#">kontak kami</a>
-        </nav>
+    <div class="login-container">
+        <form class="login-form" action="/faya/home.html" method="post">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <a href=""><button >Login</button></a>
+        </form>
     </div>
-    <div class="content">
-
-        <h2>Produk pilihan</h2>
-    </div>
-    <div class="content">
-        <div class="row">
-            <a href="product_details.html" class="box catalogbox" >
-                <div class="image-container"><img  src="assets/images/sakatonik.jpeg" alt="Product 1"></div>
-                <div class="productdesc">
-                    <tr>
-                        <td><div class="producttitle">sakatonik</div></td>
-                        <td><p>harga : 50.000</p></td>
-                    </tr> 
-                </div>
-            </a>
-            <div class="box catalogbox">
-                <div class="image-container"><img  src="assets/images/sakatonik.jpeg" alt="Product 1"></div>
-                <div class="productdesc">
-                    <tr>
-                        <td><div class="producttitle">sakatonik</div></td>
-                        <td><p>harga : 50.000</p></td>
-                    </tr> 
-                </div>
-            </div>
-            <div class="box catalogbox">
-                <div class="image-container"><img  src="assets/images/sakatonik.jpeg" alt="Product 1"></div>
-                <div class="productdesc">
-                    <tr>
-                        <td><div class="producttitle">sakatonik</div></td>
-                        <td><p>harga : 50.000</p></td>
-                    </tr> 
-                </div>
-            </div>
-            <div class="box catalogbox">
-                <div class="image-container"><img  src="assets/images/sakatonik.jpeg" alt="Product 1"></div>
-                <div class="productdesc">
-                    <tr>
-                        <td><div class="producttitle">sakatonik</div></td>
-                        <td><p>harga : 50.000</p></td>
-                    </tr> 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <footer>
-        <p>&copy; 2024 My E-commerce Website. All rights reserved.</p>
-    </footer> -->
 </body>
 </html>

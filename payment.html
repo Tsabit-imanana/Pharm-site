@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Pharm Site</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        /* Gaya CSS untuk tata letak halaman */
+        .payment-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .qr-code {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Pembayaran</h2>
+        <p>Silakan lakukan pembayaran dengan mengirimkan jumlah yang sesuai ke alamat atau nomor berikut:</p>
+        <p>Alamat/Nomor: 1234-5678-9012-3456</p>
+        <p>Jumlah: Rp. 100.000</p> <!-- Data jumlah pembayaran dari database -->
+        
+        <div id="qrcode" class="qr-code"></div>
+    </div>
+
+    <!-- Load QRCode.js -->
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+
+    <script>
+        // Inisialisasi QR code dengan data pembayaran
+        var qrData = '1234-5678-9012-3456'; // Ganti dengan data pembayaran dari database jika diperlukan
+        var qrcode = new QRCode(document.getElementById('qrcode'), {
+            text: qrData,
+            width: 200,
+            height: 200,
+            colorDark : "#000",
+            colorLight : "#fff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+</html>

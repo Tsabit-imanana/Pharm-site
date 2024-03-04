@@ -1,13 +1,42 @@
+@font-face {
+    font-family: 'Balsamiq Sans';
+    src: url('fonts/balsamiqsans.woff2') format('woff2'), /* Format WOFF2 */
+         url('fonts/balsamiqsans.woff') format('woff'); /* Format WOFF */
+    /* Tambahkan format font lainnya jika diperlukan (TTF, EOT, dsb.) */
+  }
+
+/* Gaya CSS untuk tata letak halaman */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Balsamiq Sans", sans-serif;
     margin: 0;
     padding: 0;
 }
+.page {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.main {
+    flex: 3;
+    padding: 10px;
+}
+
+/* Style lainnya tetap sama seperti yang Anda miliki */
+
 header {
+    font-size: 25px;
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 1px;
     text-align: center;
+}
+title{
+    font-size: 700px;
 }
 nav {
     background-color: #f4f4f4;
@@ -23,31 +52,56 @@ footer {
     bottom: 0;
     width: 100%;
 }
-.content {
+.sidebarleft{
+    margin-top: 80px;
+    background-color: #f4f4f4;
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+}
+.sidebarright{
+    margin-top: 80px;
+    background-color: #f4f4f4;
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+}
+.row {
+    align-items: center;
     display: flex;
     justify-content: center; /* Tambahkan padding 10% untuk margin kiri dan kanan */
+    margin-left: 50px;
+    margin-right: 50px;
 }
+.herophoto{
+    height: 300px; /* Atur tinggi gambar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-item {
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
+    padding-top: 5%;
+    height: 400px;
+    width: 800px;
+    margin-right: 10px;
 }
 
 .box {
     border: 2px solid black;
     border-radius: 10px;
-    margin-bottom: 15px;
     background-color: #e9e8e8;
     text-decoration: none;
     color: inherit;
 }
 
-.calatogbox {
-    background-color: #333;
-}
-
+.catalogbox{
+    margin-top: 20px;
+    padding-top: 5%;
+    height: 350px;
+    width: 300px;
+    margin-right: 10px;
+  }
 
 .producttitle {
     text-align: center;
@@ -106,7 +160,7 @@ footer {
 
 .product-description {
     margin-top: 10px;
-    font-size: 16px;
+    font-size:16px;
     line-height: 1.6;
 }
 
@@ -124,3 +178,4 @@ footer {
 .add-to-cart:hover {
     background-color: #555;
 }
+
